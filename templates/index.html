@@ -1,0 +1,10 @@
+
+<h1>Trending Sneakers</h1>
+<ul>
+{% for sneaker in sneakers %}
+<li>{{ sneaker.name }} - ${{ sneaker.price }}</li>
+<a href="/details/{{ sneaker.id }}">Details</a>
+{% endfor %}
+</ul>
+
+
